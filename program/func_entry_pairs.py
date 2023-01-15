@@ -31,7 +31,6 @@ def open_positions(client):
         open_positions_dict = json.load(open_positions_file)
         for p in open_positions_dict:
             bot_agents.append(p)
-        pprint(bot_agents)
     except:
         bot_agents = []
 
@@ -145,7 +144,7 @@ def open_positions(client):
                             print("---")
 
     # Save agents
-    print(f"Success: {len(bot_agents)} new pairs LIVE") # Try assigning len(bot_agents) to a variable so that it doesn't get calculated two times
+    print(f"Success: Manage open trade checked") # Try assigning len(bot_agents) to a variable so that it doesn't get calculated two times
     if len(bot_agents) > 0:
         with open("bot_agents.json", "w") as f:
             json.dump(bot_agents, f)

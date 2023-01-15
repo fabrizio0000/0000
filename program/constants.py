@@ -6,16 +6,16 @@ MODE = "DEVELOPEMENT"
 
 
 # Clear all positions and orderds
-ABORT_ALL_POSITIONS = True
+ABORT_ALL_POSITIONS = False
 
 # Find cointegrated pairs
 FIND_COINTEGRATED = False
 
 # Manage exits
-MANAGE_EXITS = True
+MANAGE_EXITS = False
 
 # Place trades
-PLACE_TRADES = True
+PLACE_TRADES = False
 
 # Resolution
 RESOLUTION = "1HOUR"
@@ -62,3 +62,7 @@ HOST = API_HOST_MAINNET if MODE=="PRODUCTION" else API_HOST_GOERLI
 HTTP_PROVIDER_MAINNET = "https://eth-mainnet.g.alchemy.com/v2/CwKTAfOUhVWanDM1kEM-hKzAEcR5IlUd"
 HTTP_PROVIDER_TESTNET = "https://eth-goerli.g.alchemy.com/v2/ALjwxbuzW3S_Jdu1pI_x0yHFzq5QuS4X"
 HTTP_PROVIDER = HTTP_PROVIDER_MAINNET if MODE=="PRODUCTION" else HTTP_PROVIDER_TESTNET
+
+# TELEGRAM ITEMS
+TELEGRAM_TOKEN = "5936061416:AAEghwh748pC2WlAHFulMz7tmdLK0USUGzw"
+TELEGRAM_CHAT_ID = "5041853212"
